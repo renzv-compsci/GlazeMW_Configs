@@ -144,7 +144,7 @@ workspaces:
   # For design and creative workspace 
   - name: '4'
     display_name: 'Forge'
-    bind_to_monitor: 1
+    bind_to_monitor: 0
     
   # Non-active / leisure space 
   - name: '5'
