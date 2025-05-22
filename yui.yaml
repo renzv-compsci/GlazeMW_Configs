@@ -125,20 +125,30 @@ window_behavior:
       shown_on_top: false
 
 workspaces:
+
+  # Core system / workspace (preferably for programming)
   - name: '1'
-    display_name: 'Node'
+    display_name: 'Nexus'
     bind_to_monitor: 1
 
+  # Notifications (Usually this workspace is for communication)
   - name: '2'
-    display_name: 'Chime'
+    display_name: 'Ping'
     bind_to_monitor: 1
 
+  # Vault this workspace will be for my notion (Task tracker / Calendar)
   - name: '3'
-    display_name: 'Ledger'
+    display_name: 'Vault'
     bind_to_monitor: 0
-    
+
+  # For design and creative workspace 
   - name: '4'
-    display_name: 'Haven'
+    display_name: 'Forge'
+    bind_to_monitor: 1
+    
+  # Non-active / leisure space 
+  - name: '5'
+    display_name: 'Idle'
     bind_to_monitor: 1
 
 window_rules:
@@ -283,6 +293,8 @@ keybindings:
     bindings: ['alt+3']
   - commands: ['focus --workspace 4']
     bindings: ['alt+4'] 
+  - commands: ['focus --workspace 5']
+    bindings: ['alt+5'] 
 
   # Move the focused window's parent workspace to a monitor in a given
   # direction.
